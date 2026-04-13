@@ -1,0 +1,101 @@
+body{
+    background: linear-gradient(180deg, #8a7560 0%, #3e2b20 80%, #000) ;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        
+      
+}
+#Encabezado {
+    
+    width: 98.2%;
+    height: 80px;
+    display: flex;
+    background-color:rgb(27, 26, 26);
+    color: rgb(242 202 80);
+    padding: 10px;
+ 
+    
+}
+
+.bt{
+    width: 100px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    font: inherit; /* Para que herede la letra del resto del texto */
+    color: gainsboro;  
+    margin-left: 90px;
+    
+   
+    
+}
+.bt2{
+    margin-left: 40px;
+    width: 100px;
+    height: 50px;
+}
+
+#noseque {
+    text-align: center;
+    font-size:40px;
+    color: aliceblue;
+}
+
+.contenedor{
+    display: flex;       
+  height: 100vh;      /* Ocupa el 100% de la altura de la pantalla */
+  width: 70%;
+  margin-left: 200px;
+  
+}
+.izquierdo{
+    border-radius: 2%;
+    flex: 1;            /* Hace que cada lado ocupe exactamente el 50% */
+    display: flex;      /* Para centrar el contenido interno */
+    flex-direction: column;
+   
+    padding: 50px;
+    background-color:#303134; /* Gris casi negro de la imagen */ 
+  color: #ffffff;
+}
+.derecho{
+   
+    border-radius: 2%;
+    flex: 1;            /* Hace que cada lado ocupe exactamente el 50% */
+    display: flex;      /* Para centrar el contenido interno */
+    flex-direction: column;
+    padding: 60px;
+    background-color:  #000000ee; /* Un gris apenas más claro o negro sólido */
+  color: #ffffff;
+}
+
+
+.contenedor2{
+    display: flex;
+}
+.contenedor3{
+    display: flex;
+}
+.contenedor4{
+    display: flex;
+}
+
+
+#boton{
+    margin: 2%;
+    border-radius: 10%;
+    width: 100px;
+    height: 80px;
+}
+#botonn{
+    margin: 2%;
+    border-radius: 28%;
+    width: 300px;
+    height: 50px;
+    background-color: #D4AF37;
+}
+
+
+
