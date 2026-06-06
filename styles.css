@@ -918,25 +918,190 @@ body {
     color: #444;
 }
 
-/* RESPONSIVE */
-@media (max-width: 700px) {
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════════ */
+
+/* ── TABLET (≤ 900px) ── */
+@media (max-width: 900px) {
+    /* Navbar: ocultar textos de botones, solo iconos */
+    .nav-btn span {
+        display: none;
+    }
+
+    .nav-btn {
+        padding: 6px 8px;
+    }
+
+    /* Tarjetas: 3 columnas en tablet */
     .tarjetas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Stats: 2 columnas */
+    .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Footer: 2 columnas */
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ── MÓVIL (≤ 640px) ── */
+@media (max-width: 640px) {
+
+    /* --- NAVBAR --- */
+    .navbar {
+        padding: 0 1rem;
+        height: 50px;
+    }
+
+    .navbar-logo span {
+        font-size: 13px;
+    }
+
+    .badge-rol {
+        display: none; /* Se oculta en móvil para ahorrar espacio */
+    }
+
+    .btn-salir {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+    /* --- VISTAS --- */
+    .vista {
+        padding: 1.25rem 1rem;
+    }
+
+    /* --- HERO --- */
+    .hero-dash {
+        padding: 2rem .5rem 1rem;
+    }
+
+    .hero-dash h1 {
+        font-size: 26px;
+    }
+
+    .hero-dash p {
+        font-size: 13px;
+    }
+
+    /* --- TARJETAS: 2 columnas en móvil --- */
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 1.25rem auto;
+    }
+
+    .tarjeta {
+        padding: 1rem .7rem;
+    }
+
+    .tarjeta h3 {
+        font-size: 12px;
+    }
+
+    /* --- ENCERES --- */
+    .selector-salon {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    /* Tabla scrollable horizontalmente en móvil */
+    .tabla-enc {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+
+    /* Historial */
+    .hist-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    /* --- INFORMACIÓN --- */
+    .info-subtabs {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .info-tab {
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+
+    /* Stats: 1 columna */
     .stats-grid {
         grid-template-columns: 1fr;
     }
 
-    .footer {
-        grid-template-columns: 1fr;
+    /* --- SUGERENCIAS --- */
+    .sug-titulo {
+        font-size: 17px;
     }
 
     .fila-dos {
         grid-template-columns: 1fr;
     }
 
+    .form-sug,
+    .soporte-box {
+        padding: 1.1rem 1rem;
+    }
+
+    /* --- FOOTER: 1 columna --- */
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem 1rem 1rem;
+    }
+
+    .footer-redes {
+        flex-wrap: wrap;
+    }
+
+    /* --- LOGIN --- */
+    .caja-login {
+        padding: 2rem 1.25rem;
+    }
+
+    .roles {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .rol-btn {
+        padding: 12px 6px;
+    }
+
+    .rol-btn span {
+        font-size: 11px;
+    }
+}
+
+/* ── MÓVIL PEQUEÑO (≤ 380px) ── */
+@media (max-width: 380px) {
+    .tarjetas {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .roles {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .hero-dash h1 {
-        font-size: 28px;
+        font-size: 22px;
+    }
+
+    .nav-btn svg {
+        width: 16px;
+        height: 16px;
     }
 }
